@@ -1,0 +1,425 @@
+<!-- 270 * 300-->
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>Expositions</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width height=device-height initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800%7CPoppins:300,400,700">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css" id="main-styles-link">
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}
+    
+  
+
+	@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    line-height: 1.5;
+}
+.card-wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.img-display{
+    overflow: hidden;
+}
+.img-showcase{
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.img-showcase img{
+    min-width: 100%;
+}
+.img-select{
+    display: flex;
+}
+.img-item{
+    margin: 0.3rem;
+}
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3){
+    margin-right: 0;
+}
+.img-item:hover{
+    opacity: 0.8;
+}
+.product-content{
+    padding: 2rem 1rem;
+}
+.product-title{
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: relative;
+    color: #12263a;
+    margin: 1rem 0;
+}
+.product-title::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 80px;
+    background: #12263a;
+}
+.product-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    background: #256eff;
+    color: #fff;
+    padding: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+.product-link:hover{
+    opacity: 0.9;
+}
+.product-rating{
+    color: #ffc107;
+}
+.product-rating span{
+    font-weight: 600;
+    color: #252525;
+}
+.product-price{
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.product-price span{
+    font-weight: 400;
+}
+.last-price span{
+    color: #f64749;
+    text-decoration: line-through;
+}
+.new-price span{
+    color: #256eff;
+}
+.product-detail h2{
+    text-transform: capitalize;
+    color: #12263a;
+    padding-bottom: 0.6rem;
+}
+.product-detail p{
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    opacity: 0.8;
+}
+.product-detail ul{
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+.product-detail ul li{
+    margin: 0;
+    list-style: none;
+    background: url(https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/checked.png) left center no-repeat;
+    background-size: 18px;
+    padding-left: 1.7rem;
+    margin: 0.4rem 0;
+    font-weight: 600;
+    opacity: 0.9;
+}
+.product-detail ul li span{
+    font-weight: 400;
+}
+.purchase-info{
+    margin: 1.5rem 0;
+}
+.purchase-info input,
+.purchase-info .btn{
+    border: 1.5px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+    padding: 0.45rem 0.8rem;
+    outline: 0;
+    margin-right: 0.2rem;
+    margin-bottom: 1rem;
+}
+.purchase-info input{
+    width: 60px;
+}
+.purchase-info .btn{
+    cursor: pointer;
+    color: #fff;
+}
+.purchase-info .btn:first-of-type{
+    background: #256eff;
+}
+.purchase-info .btn:last-of-type{
+    background: #f64749;
+}
+.purchase-info .btn:hover{
+    opacity: 0.9;
+}
+.social-links{
+    display: flex;
+    align-items: center;
+}
+.social-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: #000;
+    border: 1px solid #000;
+    margin: 0 0.2rem;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: all 0.5s ease;
+}
+.social-links a:hover{
+    background: #000;
+    border-color: transparent;
+    color: #fff;
+}
+
+@media screen and (min-width: 992px){
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+    .card-wrapper{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content{
+        padding-top: 0;
+    }
+}
+    
+    </style>
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="preloader-logo"><img src="images/ligna_black.PNG" alt="" width="151" height="44" srcset="images/ligna_black.PNG.png 2x"/>
+      </div>
+      <div class="preloader-body">
+        <div id="loadingProgressG">
+          <div class="loadingProgressG" id="loadingProgressG_1"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page">
+      <header class="section novi-background page-header">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-corporate" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-lg-stick-up="true" data-lg-stick-up-offset="118px" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xl-stick-up="true" data-xl-stick-up-offset="118px" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-xxl-stick-up-offset="118px" data-xxl-stick-up="true">
+            
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap-1">
+                  <!-- RD Navbar Nav-->
+                  <ul class="rd-navbar-nav">
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">À propos</a>
+                    </li>
+                    <li class="rd-nav-item active"><a class="rd-nav-link" href="exposition.html">Expositions</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="realisation.html">Réalisations</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contacts</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- Breadcrumbs -->
+      <section class="section novi-background breadcrumbs-custom bg-image context-dark" style="background-image: url(images/kichens.jpg);">
+        <div class="breadcrumbs-custom-inner">
+          <div class="container breadcrumbs-custom-container">
+            <div class="breadcrumbs-custom-main">
+              <h6 class="breadcrumbs-custom-subtitle title-decorated">Nos expositions</h6>
+              <h2 class="text-uppercase breadcrumbs-custom-title">Nos expositions</h2>
+            </div>
+            <ul class="breadcrumbs-custom-path">
+              <li><a href="index.html">Accueil</a></li>
+              <li class="active">Nos expositions</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Base typography-->
+        <!-- Services-->
+      
+      <section class="section novi-background section-lg text-center">
+        <div class="container">
+
+
+
+			<div class = "card-wrapper">
+				<div class = "card" style="clear: both;">
+				  <!-- card left -->
+				  <div class = "product-imgs">
+					<div class = "img-display" >
+					  <div class = "img-showcase">
+						<img src = "images/1.jpg" alt = "shoe image">
+						<img src = "images/2.jpg" alt = "shoe image">
+						<img src = "images/3.jpg" alt = "shoe image">
+						<img src = "images/4.jpg" alt = "shoe image">
+					  </div>
+					</div>
+					<div class = "img-select">
+					  <div class = "img-item">
+						<a href = "#" data-id = "1">
+						  <img src = "images/1.jpg" alt = "shoe image">
+						</a>
+					  </div>
+					  <div class = "img-item">
+						<a href = "#" data-id = "2">
+						  <img src = "images/2.jpg" alt = "shoe image">
+						</a>
+					  </div>
+					  <div class = "img-item">
+						<a href = "#" data-id = "3">
+						  <img src = "images/3.jpg" alt = "shoe image">
+						</a>
+					  </div>
+					  <div class = "img-item">
+						<a href = "#" data-id = "4">
+						  <img src = "images/4.jpg" alt = "shoe image">
+						</a>
+					  </div>
+					</div>
+				  </div>
+				  <!-- card right -->
+				  <div class = "product-content">
+					<h2 class = "product-title">nike shoes</h2>
+					<a href = "#" class = "product-link">visit nike store</a>
+					<div class = "product-rating">
+					  <i class = "fas fa-star"></i>
+					  <i class = "fas fa-star"></i>
+					  <i class = "fas fa-star"></i>
+					  <i class = "fas fa-star"></i>
+					  <i class = "fas fa-star-half-alt"></i>
+					  <span>4.7(21)</span>
+					</div>
+			  
+					<div class = "product-price">
+					  <p class = "last-price">Old Price: <span>$257.00</span></p>
+					  <p class = "new-price">New Price: <span>$249.00 (5%)</span></p>
+					</div>
+			  
+					<div class = "product-detail">
+					  <h2>about this item: </h2>
+					  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa!</p>
+					  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</p>
+					  <ul>
+						<li>Color: <span>Black</span></li>
+						<li>Available: <span>in stock</span></li>
+						<li>Category: <span>Shoes</span></li>
+						<li>Shipping Area: <span>All over the world</span></li>
+						<li>Shipping Fee: <span>Free</span></li>
+					  </ul>
+					</div>
+			  
+				  </div>
+				</div>
+			  </div>
+		</div>
+      </section>
+        <footer class="section novi-background footer-advanced bg-gray-700">
+              
+          <div class="footer-advanced-aside">
+            <div class="container">
+              <div class="footer-advanced-layout">
+                <div>
+                  <ul class="list-nav"> 
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about-us.html">À propos</a></li>
+                    <li><a href="exposition.html">Expositions</a>
+                    </li>
+                    <li><a href="realisation.html">Réalisations</a>
+                    </li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <ul class="foter-social-links list-inline list-inline-md">
+                    <li><a class="icon novi-icon icon-sm link-default mdi mdi-facebook" href="https://www.facebook.com/lignesetcuisines"></a></li>
+                    <li><a class="icon novi-icon icon-sm link-default mdi mdi-instagram" href="https://www.instagram.com/cuisines.ligna/"></a></li>
+                    <li><a class="icon novi-icon icon-sm link-default mdi mdi-google" href="mailto:lignacuisines@gmail.com"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <hr>
+          </div>
+          <div class="footer-advanced-aside">
+            <div class="container">
+              <div class="footer-advanced-layout"><a class="brand" href="index.html"><img src="images/ligna_white.PNG" alt="" width="115" height="34" srcset="images/ligna_white.png 2x"/></a>
+                <!-- Rights-->
+                <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>. All Rights Reserved. Design by Wissem SMATI</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+  </div>
+  <!-- Global Mailform Output-->
+  <div class="snackbars" id="form-output-global"></div>
+  <!-- Javascript-->
+  <script src="js/core.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <script>
+	const imgs = document.querySelectorAll('.img-select a');
+const imgBtns = [...imgs];
+let imgId = 1;
+
+imgBtns.forEach((imgItem) => {
+    imgItem.addEventListener('click', (event) => {
+        event.preventDefault();
+        imgId = imgItem.dataset.id;
+        slideImage();
+    });
+});
+
+function slideImage(){
+    const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+
+    document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+}
+
+window.addEventListener('resize', slideImage);
+  </script>
+  </body>
+  </html>
