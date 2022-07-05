@@ -258,31 +258,31 @@ img{
 				  <div class = "product-imgs">
 					<div class = "img-display" >
 					  <div class = "img-showcase">
-						<img src = "images/1.jpg" alt = "shoe image">
-						<img src = "images/2.jpg" alt = "shoe image">
-						<img src = "images/3.jpg" alt = "shoe image">
-						<img src = "images/4.jpg" alt = "shoe image">
+						<img src = "images/exp9.jpg" alt = "shoe image">
+						<img src = "images/exp5.jpg" alt = "shoe image">
+						<img src = "images/exp11.jpg" alt = "shoe image">
+						<img src = "images/exp12.jpg" alt = "shoe image">
 					  </div>
 					</div>
 					<div class = "img-select">
 					  <div class = "img-item">
 						<a href = "#" data-id = "1">
-						  <img src = "images/1.jpg" alt = "shoe image">
+						  <img src = "images/exp9.jpg" alt = "shoe image">
 						</a>
 					  </div>
 					  <div class = "img-item">
 						<a href = "#" data-id = "2">
-						  <img src = "images/2.jpg" alt = "shoe image">
+						  <img src = "images/exp5.jpg" alt = "shoe image">
 						</a>
 					  </div>
 					  <div class = "img-item">
 						<a href = "#" data-id = "3">
-						  <img src = "images/3.jpg" alt = "shoe image">
+						  <img src = "images/exp11.jpg" alt = "shoe image">
 						</a>
 					  </div>
 					  <div class = "img-item">
 						<a href = "#" data-id = "4">
-						  <img src = "images/4.jpg" alt = "shoe image">
+						  <img src = "images/exp12.jpg" alt = "shoe image">
 						</a>
 					  </div>
 					</div>
@@ -389,19 +389,18 @@ function slideImage(){
 
 window.addEventListener('resize', slideImage);
   </script>
-
-<script>
-  window.watsonAssistantChatOptions = {
-    integrationID: "18439bb2-a38c-473c-8c3c-3da4c8f6c74f", // The ID of this integration.
-    region: "eu-gb", // The region your integration is hosted in.
-    serviceInstanceID: "ed8e5c3a-6675-4bc6-a0ec-7af979655936", // The ID of your service instance.
-    onLoad: function(instance) { instance.render(); }
-  };
-  setTimeout(function(){
-    const t=document.createElement('script');
-    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-    document.head.appendChild(t);
-  });
-</script>
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "18439bb2-a38c-473c-8c3c-3da4c8f6c74f", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "ed8e5c3a-6675-4bc6-a0ec-7af979655936", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
   </body>
   </html>

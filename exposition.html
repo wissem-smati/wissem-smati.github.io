@@ -85,15 +85,15 @@
                 </article>
               </div>
               <div class="col-sm-6 col-lg-3">
-                <article class="thumbnail-light"><a class="thumbnail-light-media" href="#"><img class="thumbnail-light-image" src="images/exp01.jpg" alt="" width="270" height="300"/></a>
+                <article class="thumbnail-light"><a class="thumbnail-light-media" href="detail_cuisine2.html"><img class="thumbnail-light-image" src="images/exp01.jpg" alt="" width="270" height="300"/></a>
                 </article>
               </div>
               <div class="col-sm-6 col-lg-3">
-                <article class="thumbnail-light"><a class="thumbnail-light-media" href="#"><img class="thumbnail-light-image" src="images/exp9.jpg" alt="" width="270" height="300"/></a>
+                <article class="thumbnail-light"><a class="thumbnail-light-media" href="detail_cuisine3.html"><img class="thumbnail-light-image" src="images/exp9.jpg" alt="" width="270" height="300"/></a>
                 </article>
               </div>
               <div class="col-sm-6 col-lg-3">
-                <article class="thumbnail-light"><a class="thumbnail-light-media" href="#"><img class="thumbnail-light-image" src="images/exp5.jpg" alt="" width="270" height="300"/></a>
+                <article class="thumbnail-light"><a class="thumbnail-light-media" href="detail_cuisine4.html"><img class="thumbnail-light-image" src="images/exp5.jpg" alt="" width="270" height="300"/></a>
                 </article>
               </div>
               
@@ -105,65 +105,6 @@
 
 
 
-
-
-              <div class="col-sm-6 col-lg-3">
-                <!-- Thumbnail Light-->
-                <article class="thumbnail-light"><a class="thumbnail-light-media" href="#"><img class="thumbnail-light-image" src="images/exp01.jpg" alt="" width="270" height="300"/></a>
-                </article>
-              </div>
-              <div class="col-sm-6 col-lg-3">
-                <!-- Thumbnail Light-->
-                <article class="thumbnail-light"><a class="thumbnail-light-media" href="#"><img class="thumbnail-light-image" src="images/exp2.jpg" alt="" width="270" height="300"/></a>
-                </article>
-              </div>
-              <div class="col-sm-6 col-lg-3">
-                <!-- Thumbnail Light-->
-                <article class="thumbnail-light"><a class="thumbnail-light-media" href="#"><img class="thumbnail-light-image" src="images/exp3.jpg" alt="" width="270" height="300"/></a>
-                </article>
-              </div>
-              <div class="col-sm-6 col-lg-3">
-                <!-- Thumbnail Light-->
-                <article class="thumbnail-light"><a class="thumbnail-light-media" href="#"><img class="thumbnail-light-image" src="images/exp4.jpg" alt="" width="270" height="300"/></a>
-                </article>
-              </div>
-
-             
-              <!-- ----------------------------- PART 3 ----------------------------- -->
-              <div class="col-sm-6 col-lg-3">
-                <article class="thumbnail-light"><a class="thumbnail-light-media" href="#"><img class="thumbnail-light-image" src="images/exp9.jpg" alt="" width="270" height="300"/></a>
-                </article>
-              </div>
-              <div class="col-sm-6 col-lg-3">
-                <article class="thumbnail-light"><a class="thumbnail-light-media" href="#"><img class="thumbnail-light-image" src="images/exp10.jpg" alt="" width="270" height="300"/></a>
-                </article>
-              </div>
-              <div class="col-sm-6 col-lg-3">
-                <article class="thumbnail-light"><a class="thumbnail-light-media" href="#"><img class="thumbnail-light-image" src="images/exp11.jpg" alt="" width="270" height="300"/></a>
-                </article>
-              </div>
-              <div class="col-sm-6 col-lg-3">
-                <article class="thumbnail-light"><a class="thumbnail-light-media" href="#"><img class="thumbnail-light-image" src="images/exp12.jpg" alt="" width="270" height="300"/></a>
-                </article>
-              </div>
-
-               <!-- ----------------------------- PART 2 ----------------------------- -->
-               <div class="col-sm-6 col-lg-3">
-                <article class="thumbnail-light"><a class="thumbnail-light-media" href="#"><img class="thumbnail-light-image" src="images/exp5.jpg" alt="" width="270" height="300"/></a>
-                </article>
-              </div>
-              <div class="col-sm-6 col-lg-3">
-                <article class="thumbnail-light"><a class="thumbnail-light-media" href="#"><img class="thumbnail-light-image" src="images/exp6.jpg" alt="" width="270" height="300"/></a>
-                </article>
-              </div>
-              <div class="col-sm-6 col-lg-3">
-                <article class="thumbnail-light"><a class="thumbnail-light-media" href="#"><img class="thumbnail-light-image" src="images/exp7.jpg" alt="" width="270" height="300"/></a>
-                </article>
-              </div>
-              <div class="col-sm-6 col-lg-3">
-                <article class="thumbnail-light"><a class="thumbnail-light-media" href="#"><img class="thumbnail-light-image" src="images/exp8.jpg" alt="" width="270" height="300"/></a>
-                </article>
-              </div>
 
 
               <div class="col-md-12 wow-outer"><a class="button button-primary button-winona button-md" href="realisation.html">voir les réalisations</a></div>
@@ -215,5 +156,19 @@
   <!-- Javascript-->
   <script src="js/core.min.js"></script>
   <script src="js/script.js"></script>
+
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "18439bb2-a38c-473c-8c3c-3da4c8f6c74f", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "ed8e5c3a-6675-4bc6-a0ec-7af979655936", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
   </body>
   </html>
